@@ -3,7 +3,7 @@ const service = {};
 
 service.getProductsFromFile = async () => {
 
-        return fetch("http://localhost:1337/filedata/anders")
+        return fetch("../data/products.json")
         .then((dataFromFile) => dataFromFile.json())
         .then((productsInJson) => {
 
